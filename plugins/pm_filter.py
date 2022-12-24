@@ -173,6 +173,9 @@ async def next_page(bot, query):
     btn.insert(0, [
         InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
     ])
+    btn.insert(0, [
+        InlineKeyboardButton("✳️𝐋𝐀𝐓𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄_𝐒𝐄𝐑𝐈𝐄𝐒✅", url='https://t.me/+kfus7ug5yy8zYzdl')
+    ])
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
@@ -1414,6 +1417,9 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
         )
+     btn.insert(0, [
+        InlineKeyboardButton("✳️𝐋𝐀𝐓𝐄𝐒𝐓 𝐌𝐎𝐕𝐈𝐄_𝐒𝐄𝐑𝐈𝐄𝐒✅", url='https://t.me/+kfus7ug5yy8zYzdl')
+    ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
